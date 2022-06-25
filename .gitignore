@@ -149,3 +149,7 @@ shipment-documents-test/commercial-invoices/CI-*
 shipment-documents-test/package-labels/label-*
 
 .DS_Store
+
+
+country_codify_numbers/data/*
+!country_codify_numbers/data/test.csv
