@@ -154,4 +154,5 @@ shipment-documents-test/package-labels/label-*
 country_codify_numbers/results/*
 country_codify_numbers/data/*
 !country_codify_numbers/data/test.csv
+!country_codify_numbers/data/test_recipients.csv
 !country_codify_numbers/data/country_calling_codes.json

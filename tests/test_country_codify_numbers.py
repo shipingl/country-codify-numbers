@@ -1,5 +1,6 @@
 from country_codify_numbers import __version__
 from country_codify_numbers.runner import main, read_csv_as_list_of_dicts
+from country_codify_numbers.recipient_runner import codify_recipient_numbers
 
 
 def test_version():
@@ -7,7 +8,7 @@ def test_version():
 
 
 def test_main():
-    assert main() == 0
+    assert main(dryrun=True) == 0
 
 
 def test_read_csv_as_list_of_dicts():
@@ -17,3 +18,7 @@ def test_read_csv_as_list_of_dicts():
         {"user_id": "5", "meta_value": "456"},
     ]
     assert len(data) == 2
+
+
+def test_codify_recipient_numbers():
+    assert codify_recipient_numbers(dryrun=True) == 0
