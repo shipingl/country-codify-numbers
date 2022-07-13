@@ -39,7 +39,7 @@ def output_sql_to_file(data: List[Dict[str, str]], filename: str) -> int:
         for row in data:
             f.write(
                 (
-                    f"('{row['user_id']}', 'subscriber_number'), "
+                    f"('{row['user_id']}', 'subscriber_number', "
                     f"'{row['subscriber_number']}'),\n"
                 )
             )
